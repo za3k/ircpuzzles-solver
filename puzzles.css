@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footnote {
+    margin: 2em;
+    flex: 0;
+}
+.footnote p {
+    margin-left: 2em;
+}
+
+.year-select {
+    width: 80%;
+    height: 70%;
+    margin: 2em;
+    flex: 1;
+}
+.year {
+    width: 6em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    margin: 5px auto; 
+    border: 2px solid;
+    font-size: 24pt;
+    user-select: none;
+}
+.year:hover {
+    background-color: lightyellow;
+}
+.year:active {
+    background-color: yellow;
+}
+.year.disabled {
+    color: grey;
+    background-color: lightgrey;
+}
+
+.solver {
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+}
