@@ -1,0 +1,344 @@
+title: 2023 April Fool's Puzzle Competition
+theme: Countries of the World
+start: 00
+final: 05
+puzzles:
+00:
+  unlocks: 01
+  title: introduction
+  clues:
+    - |
+        Here are the puzzles, hints, and answers for the 2023 April Fools Puzzle Contest on #ircpuzzles on libera IRC.
+
+        Hints were gradually revealed throughout the contest. Expect to need them to finish.
+
+        You can guess as many times as you want, there's no penalty.
+
+        **The 2023 theme was "Countries of the World"**
+
+        <a href="https://ircpuzzles.org/">https://ircpuzzles.org/</a>
+
+        Rules: <a href="https://ircp.link/rules">https://ircp.link/rules</a>
+
+        Tips: <a href="https://ircp.link/tips">https://ircp.link/tips</a>
+
+        Links: <a href="https://linktr.ee/ircpuzzles">https://linktr.ee/ircpuzzles</a>
+    - the answer is "puzzle"
+  answer: puzzle
+01:
+  unlocks: 02
+  title: Tutorial
+  author: wolf
+  clues:
+    - This year's theme is Countries of the World!
+    - https://files.ircpuzzles.org/2023/IWcY5ZmCnfkHLbSsLtxp.png
+    - https://files.ircpuzzles.org/2023/ojo9YX2KksI7vrfWhrrF.png
+    - Current president is Wavel Ramkalawan
+  answer: seyschelles
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+02:
+  unlocks: 03
+  title: Poetic
+  author: wolf
+  clues:
+    - Solutions are not always country names 
+    - https://files.ircpuzzles.org/2023/DDPTR8ZJe0jQhlkEvpMl.txt
+    - '[¹ ][  ][² ][  ][³ ][  ][⁴ ][  ]'
+    - ISO 3166-1 α-2 
+  hints:
+    - solution format is in the clues
+    - crossword
+    - each paragraph relates to a country; concatenate their ISO 3166-1 alpha-2 codes
+  answer: alidecus
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+03:
+  unlocks: 04, A1, B1, C1
+  title: Huh?
+  author: wolf
+  clues: 
+    - https://files.ircpuzzles.org/2023/44VU4PvpF6IWOET53R83.png
+  hints:
+    - What is missing?
+    - country flags
+  answer: dragon
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+04:
+  unlocks: 05
+  title: The Fork
+  author: wolf
+  clues:
+    - Welcome to Level 04. You're standing in the middle of the forest. There is a fork in the road. You can /join four other levels. "east" leads along a river to Level A1. "north" leads through a clearing to Level B1. You can hear birds singing in the "west". That way leads to Level C1. There is a weathered stone plinth tucked behind some shrubbery. On it, someone carved: "05: A+B+C"
+    - (In the interactive solver, we have automatically unlocked A1 with the password "east", B1 with the password "west", and C1 with the password "west".)
+    - Come back here when you have the password for 05.
+  answer: crowbaroutfitanaconda
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A1:
+  unlocks: A2
+  title: From Above
+  author: wolf
+  clues:
+    - https://files.ircpuzzles.org/2023/lKeqzEPF31oMc5HVrpgX/01.jpg
+    - https://files.ircpuzzles.org/2023/lKeqzEPF31oMc5HVrpgX/02.jpg
+    - https://files.ircpuzzles.org/2023/lKeqzEPF31oMc5HVrpgX/03.jpg
+    - https://files.ircpuzzles.org/2023/lKeqzEPF31oMc5HVrpgX/04.jpg
+    - https://files.ircpuzzles.org/2023/lKeqzEPF31oMc5HVrpgX/05.jpg
+    - capital ⇒ 3166-1 α-2
+  hints:
+    - images are north-up
+    - One per continent
+    - Well-known
+  answer: nzusgbcneg
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A2:
+  unlocks: A3
+  title: Brick by Brick
+  author: pavonia
+  clues:
+    - https://files.ircpuzzles.org/2023/CMb2cY2TtZzmE7mzaQbH.jpg
+  hints:
+    - H. C. Andersen and Lars Ulrich are sad to not be part of the image
+    - landscape painter
+    - Can be solved without being completed
+    - There is one more step once you have it
+    - https://files.ircpuzzles.org/2023/QQ8FwyrcH2lqmCVJHrEB.jpg
+    - https://youtu.be/tEvMtrDHcx8
+  answer: kronborg
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A3:
+  unlocks: A4
+  title: TLDs
+  author: za3k
+  clues:
+    - TLDs
+    - https://files.ircpuzzles.org/2023/NNHnqqkz3IQ087pByoWd.txt
+    - Two letters per answer
+  hints:
+    - "In alphabetical order, the answers are: 5,1,6,3,11,2,10,7,12,9,4,8"
+  answer: eastgermany
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A4:
+  unlocks: A5
+  title: Know Your Ingredients
+  author: za3k
+  clues:
+    - Dwayne Johnson
+    - Macho Man
+    - New Fort Roughs
+    - Monty Python Horses
+  hints:
+    - ★★★★★ Flag
+    - Ate the Sun
+    - Dark Sky Country
+  answer: niue
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A5:
+  unlocks: A6
+  title: Star Child
+  author: za3k
+  clues:
+    - https://files.ircpuzzles.org/2023/22c5d3LSIohartID6T2e.html
+  hints:
+    - 
+        - B
+        - https://files.ircpuzzles.org/2023/hintB-RHyYUNTxT9bSheKkTabR.png
+    -
+        - B
+        - https://files.ircpuzzles.org/2023/lRYkgSnNu1n2IS9VN8aM.mp3
+    - 
+        - F
+        - https://files.ircpuzzles.org/2023/hintF-ZNgHJYHcPNC97Tr2zqnt.txt
+    - anthems
+  answer: groupofseven
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A6:
+  unlocks: A7
+  title: Persevering
+  author: pavonia
+  clues:
+    - 捯敀摂樵匳甦倣報 杌核慍帰娮圠祩渲 ☯️ ䷚䷊䷛䷈䷒䷊䷔䷞ ䷐䷛䷌䷊䷛䷍䷟䷇
+  hints:
+    - UTF-16 => UTF-8
+    - index
+    - '"yin2"=ok'
+    - Wen will you finally solve this?
+  answer: huamulan
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+A7:
+  title: Level A7 (end of track)
+  clues:
+    - |
+        "Congratulations! You're done with Track A. Take this with you: "crowbar"
+
+        At the end of the track you spot nikuhodai's campfire, down to glowing embers. The smell of smoke still lingers faintly in the stale air of the tunnel."
+B1:
+  unlocks: B2
+  title: Country Equations
+  author: nortti
+  clues:
+    - NR + 1 = PA, PA + 1 = SZ, SZ + 1 = ZA
+    - What is being counted?
+  hints:
+    - NR = 0
+    - PA = CN = TD = BA
+  answer: capitals
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B2:
+  unlocks: B3
+  title: North-by-Northwest
+  author: za3k
+  clues:
+    - From \0🏝️, 0.016661 💡🥈s NNEEENENNE, 3,129 στάδιοα NWWNWNWWNW, 55,398,000 𓂭 EESESSSESE, 122.64 παρασάγγης NNWNWWNNNW, 3,144,000 𒁺𒌑 EESEESEESE, 976,000 smoots WNWNWWNWNW, 1,815,000 𓂝 SSSSSSESSE.
+    - https://files.ircpuzzles.org/2023/FhndV0mmZ8njpynGdQwH.html
+  hints:
+    - The real treasure is the friends you made along the way
+    - SSSSSSESSE = 157.32421875°
+    - https://files.ircpuzzles.org/2023/Gpzhf4fMghhNtQojtfj0.jpg
+    - https://files.ircpuzzles.org/2023/RggFECqgciqHzcfrsNS4.html
+    - There is inherent uncertainty in qubits. Just accept it.
+  answer: sevenwonders
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B3:
+  unlocks: B4
+  title: The Riddle
+  author: wolf
+  clues:
+    - London and Paris on Christmas
+  hints:
+    - London, Paris, and Poland on Christmas
+  answer: kiritimati
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B4:
+  unlocks: B5
+  title: Break Room, Watercooler
+  author: wolf
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+  clues:
+    - https://files.ircpuzzles.org/2023/qZd67ATzubv8oObZ6lyI.png
+  answer: italy
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B5:
+  unlocks: B6
+  title: Beep Beep Beep
+  author: za3k/pavonia
+  clues:
+    - https://files.ircpuzzles.org/2023/IX0bK31fPNk5Sbh39Ugi/clue.wav
+    - usa
+    - K-N; B-M-A; F-P; N-U-M-T
+    -
+        - this is not a clue, for testing only
+        - https://files.ircpuzzles.org/2023/IX0bK31fPNk5Sbh39Ugi/test.wav
+  hints:
+    - 
+        - Do not call this number, please.
+        - https://files.ircpuzzles.org/2023/IX0bK31fPNk5Sbh39Ugi/hint-dontcall.wav
+    - 'Hint at the end: `sed -e "s/[^D-U]/\0./g;s/NA./ A/;s/TV/T V/"`'
+  answer: vaticancity
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B6:
+  unlocks: B7
+  title: From Abovest
+  author: wolf
+  clues:
+    - https://files.ircpuzzles.org/2023/uyBkdm5mLxB0eX8Z7ZDz/01.jpg
+    - https://files.ircpuzzles.org/2023/uyBkdm5mLxB0eX8Z7ZDz/02.jpg
+    - https://files.ircpuzzles.org/2023/uyBkdm5mLxB0eX8Z7ZDz/03.jpg
+    - https://files.ircpuzzles.org/2023/uyBkdm5mLxB0eX8Z7ZDz/04.jpg
+    - https://files.ircpuzzles.org/2023/uyBkdm5mLxB0eX8Z7ZDz/05.jpg
+    - capital ⇒ 3166-1 α-2
+  answer: fiauuysgza
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+B7:
+  title: Level B7 (end of track)
+  clues:
+    - |
+        Congratulations! You're done with Track B. Take this with you: "outfit"
+
+        As you reach the end of the track you see something scribbled on the wall. Looking closer, you scry "AimHere woz 'ere" hastily written across it.
+C1:
+  unlocks: C2
+  title: That's Bruce Lee
+  author: za3k
+  clues:
+    - https://files.ircpuzzles.org/2023/Pd0hvv37x9nbr4jNim5S.png
+    - Genesis 14:18
+  hints:
+    - https://files.ircpuzzles.org/2023/6KkCifyj27udRBgZHvNx.png
+    - https://files.ircpuzzles.org/2023/2L6jTb22NpTd2sPs8Yqn.png
+    - Combine the 1st&2nd clue
+    - priestofgodmosthigh.com
+    - uninhabited
+    - micronation
+  answer: taongi
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+C2:
+  unlocks: C3
+  title: Flag Equation
+  author: wolf
+  clues:
+    - https://files.ircpuzzles.org/2023/BleSyGcrim0wRDCleQnF.png
+  hints:
+    - ISO 3166-1 alpha-2
+  answer: eswatini
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+C3:
+  unlocks: C4
+  title: Foods of the World
+  author: za3k
+  clues:
+    - https://files.ircpuzzles.org/2023/BleSyGcrim0wRDCleQnF/
+    - https://files.ircpuzzles.org/2023/n186n3BKvxiqHiPopJNL.jpg
+  answer: mirepoix
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+C4:
+  unlocks: C5
+  title: From Abover
+  author: wolf
+  clues:
+    - https://files.ircpuzzles.org/2023/GombROHoFQMKalLS2QNU/01.jpg
+    - https://files.ircpuzzles.org/2023/GombROHoFQMKalLS2QNU/02.jpg
+    - https://files.ircpuzzles.org/2023/GombROHoFQMKalLS2QNU/03.jpg
+    - https://files.ircpuzzles.org/2023/GombROHoFQMKalLS2QNU/04.jpg
+    - https://files.ircpuzzles.org/2023/GombROHoFQMKalLS2QNU/05.jpg
+    - capital ⇒ 3166-1 α-2
+  answer: srpgmtugin
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+C5:
+  unlocks: C6
+  title: PuzzleGPT Session
+  author: pavonia
+  clues:
+    - https://files.ircpuzzles.org/2023/bozE2bNwDSCXT1LIXvoG.png
+    - Text version available at https://files.ircpuzzles.org/2023/&lt;name of the script&gt;.txt
+  hints:
+    - odd, even
+    - 1. 👍...nun, 1.5. append, 2. keep only even occurrences
+    - two different null ciphers
+    - ignore '\n's
+    - answer has spelling variant
+  answer: chakrulo
+  walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
+C6:
+  unlocks: C7
+  title: Nyan Cat
+  author: pavonia
+  clues:
+    - https://files.ircpuzzles.org/2023/9mP4bv9PuN5XazKob34p.html
+    - 'Recommendation: Listen to <a href="https://www.nyan.cat/index.php?cat=original">the nyancat song</a> whilst you solve this puzzle'
+  hints:
+    - All cats are light red at night
+    - Use the Source, Luke!
+    - ircpuzzles is Purrple is somehow blue
+    - the puns are irrelephant to the puzzle
+    - Flag
+  answer: wiphala
+C7:
+  title: Level C7 (end of track)
+  clues:
+    - |
+        Congratulations! You're done with Track C. Take this with you: "anaconda"
+
+        You see hammered to the door of the church, 95 apologies, signed by shikhin and zgrep.
+05:
+  title: Level 05, Winner's Circle
+  clues:
+    - Rejoice! This is the winner's circle, which means that you won!
