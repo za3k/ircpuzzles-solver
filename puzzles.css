@@ -159,9 +159,25 @@ body {
 }
 .clues {
     margin-top: 1em;
+    flex: 1;
+    display: flex;
 }
 .clue {
+    flex: 1;
+    display: flex;
+}
+.clue > * {
+    flex: 1;
+}
+.clue span {
     white-space: pre-wrap;
+    font-family: monospace;
+}
+.clue img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .action-section {
@@ -201,5 +217,9 @@ body {
 
 .puzzle.solved .action.show-hint, .puzzle.solved .action.answer, .puzzle.solved .action.skip {
     display: none;
+}
+
+.action.disabled {
+    opacity: 10%;
 }
 

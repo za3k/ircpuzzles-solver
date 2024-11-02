@@ -1,21 +1,15 @@
 var data;
 
 // TODO
-// [x] Add tabs for different puzzles
-// [x] Add tabs for different clues
-// [x] Show clues
-// [ ] "Reveal Hint" button
-// [x] "Skip Puzzle" button
-// [x] "Guess" button
-// [x] Solving puzzle unlocks later puzzles
 // [ ] Show all link clues as iframes
-//    [ ] Support a little additional text outside the iframe
+//     2023: A5 B2 B5 C3
 // Low priority
-// [ ] Show puzzle title and author
+// [ ] Show puzzle [x] title and author [ ]
+// [ ] Fix in-browser .wav playback rather than offering a link
 // [ ] track progress across page loads
 // [ ] add and display a timer
-// [ ] Walkthrough link on solve/skip
 // [ ] Scratchpad so you can take notes in-app (add as extra clue)
+// [ ] Closing a puzzle should focus a new one
 
 
 // ----- Timer -----
@@ -44,6 +38,7 @@ async function loadYear(year) {
     $(".hunt-year").text(year)
     $(".hunt-theme").text(data.theme)
     unlockPuzzle(data.start)
+    for (var puzzle of Object.keys(data.puzzles)) unlockPuzzle(puzzle)
     focusPuzzle(data.start)
 }
 
@@ -61,12 +56,10 @@ function guess(puzzle, g) {
 
 function revealHint(puzzle) {
     const p = data.puzzles[puzzle]
-    for (c of p.hints) {
-        if (!c.revealed.includes(c)) {
-            addClue(puzzle, c)
-            return
-        }
-    }
+    const c = p.hints[p.revealed.length - p.clues.length]
+    if (c === undefined) return
+    p.revealed.push(c)
+    unlockClue(puzzle, c)
 }
 
 function finishPuzzle(puzzle) {
@@ -128,10 +121,11 @@ function unlockPuzzle(puzzle) {
 function unlockClue(puzzle, c) {
     const p = data.puzzles[puzzle]
 
-    addClue(puzzle, c)
     if (p.hints.length + p.clues.length <= p.revealed.length) {
         p.ui.find(".show-hint").addClass("disabled")
     }
+
+    addClue(puzzle, c)
 }
 
 // ----- UI Navigation -----
@@ -208,23 +202,37 @@ function wrongAnswer() {
 // ----- Clue display -----
 
 function clueElements(puzzle, c, defaultTitle) {
-    const title = defaultTitle
+    var title = defaultTitle
 
     if (Array.isArray(c)) {
         title = c[0]
         c = c[1]
     }
 
-    var ui
-    if (c.startsWith("http")) {
-        ui = $(`<div class="clue"><iframe src="${c}"></iframe></div>`)
+    var ui, audio_type
+    if (!c.startsWith("http")) type = "text"
+    else if (c.endsWith(".png") || c.endsWith(".jpg")) type="img"
+    else if (c.endsWith(".wav") || c.endsWith(".mp3")) {
+        type="audio"
+        for ([ext, mt] of [[".wav", "audio/wav"], [".mp3", "audio/mp3"], [".ogg", "audio/ogg"]])
+            if (c.endsWith(ext)) audio_type = mt
+        type="link" // OK turns out it needs to be at 48KHz to play in browser, and not all our .wav files are
+    } else if (c.startsWith("https://files.ircpuzzles.org")) type = "iframe"
+    else type = "link"
 
-    } else {
-        ui = $(`<div class="clue">${c}</div>`)
-    }
+    if (type == "iframe") type="link" // Temporary workaround
+
+    if (type == "text") ui = $(`<span>${c}</span>`)
+    else if (type == "img") ui = $(`<a href="${c}" target="_blank"><img src="${c}"></a>`)
+    else if (type == "iframe") ui = $(`<iframe src="${c}"></iframe>`)
+    else if (type == "link") ui = $(`<a href="${c}" target="_blank">${c}</a><`)
+    else if (type == "audio") ui = $(`<audio controls><source src="${c}" type="${audio_type}"></audio>`)
+
+    const ui2 = $(`<div class="clue"></div>`)
+    ui2.append(ui)
 
     const tab = $(`<div class="tab">${title}</div>`)
-    return [tab, ui]
+    return [tab, ui2]
 }
 
 // ----- Event handling -----

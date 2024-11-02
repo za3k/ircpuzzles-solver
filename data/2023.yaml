@@ -42,7 +42,29 @@ puzzles:
     author: wolf
     clues:
       - Solutions are not always country names 
-      - https://files.ircpuzzles.org/2023/DDPTR8ZJe0jQhlkEvpMl.txt
+      - |
+          1) On borders both Adriatic and Ionian
+             I perch, my heads opposing.
+             Some may judge my looks draconian
+             and the colour juxtaposing.
+
+          2) One Seven Five Nought Eight
+             Is the number of which I'm made
+             Some big, some small
+             Some tiny specks
+             All throughout the ocean laid.
+
+          3) Hear my name and you might think
+             (correctly!) that it does derive
+             from that imaginary line
+             which parts another ten of us
+             in kind and splits the world apart.
+
+          4) There's many things to find on me,
+             but let me be quite droll:
+             A Grassy Cove,
+             A Kingsley Lake,
+             A Green Banana Hole.
       - '[¹ ][  ][² ][  ][³ ][  ][⁴ ][  ]'
       - ISO 3166-1 α-2 
     hints:
@@ -67,9 +89,12 @@ puzzles:
     title: The Fork
     author: wolf
     clues:
-      - "Welcome to Level 04. You're standing in the middle of the forest. There is a fork in the road. You can /join four other levels. \"east\" leads along a river to Level A1. \"north\" leads through a clearing to Level B1. You can hear birds singing in the \"west\". That way leads to Level C1. There is a weathered stone plinth tucked behind some shrubbery. On it, someone carved: \"05: A+B+C\""
-      - '(In the interactive solver, we have automatically unlocked A1 with the password "east", B1 with the password "west", and C1 with the password "west".)'
-      - Come back here when you have the password for 05.
+      - | 
+            Welcome to Level 04. You're standing in the middle of the forest. There is a fork in the road. You can /join four other levels. "east" leads along a river to Level A1. "north" leads through a clearing to Level B1. You can hear birds singing in the "west". That way leads to Level C1. There is a weathered stone plinth tucked behind some shrubbery. On it, someone carved: "05: A+B+C"
+
+            (In the interactive solver, we have automatically unlocked A1 with the password "east", B1 with the password "west", and C1 with the password "west".)
+
+            Come back here when you have the password for 05.
     answer: crowbaroutfitanaconda
     walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
   A1:
@@ -110,7 +135,26 @@ puzzles:
     author: za3k
     clues:
       - TLDs
-      - https://files.ircpuzzles.org/2023/NNHnqqkz3IQ087pByoWd.txt
+      - |
+          Crossword
+          [¹ ][  ][² ][³ ][  ][⁴ ][  ][⁵ ][  ][⁶ ][  ][⁷ ]    [  ][⁸ ][  ]    [⁹ ][  ][¹⁰][  ][¹¹][¹²]
+                  [  ]                                                                        [  ][  ]
+
+          Across
+           1: continent, country
+           3: "red sea", 58 districts
+           4: total independence, island
+           5: 10/10/10, 15/12/54
+           6: black red yellow, black eagle
+           7: O yizuvhu?; Kandi udite ko.
+           8: ICANN, UN
+           9: chamomile; sugar beets, currants, and oats
+          10: river dolphin, 91, tiger
+          
+          Down
+           2: ursus arctos, euro, cygnus cygnus
+          11: .gi .ad .pt .fr .ma
+          12: whakapapa, kapua ma roa
       - Two letters per answer
     hints:
       - "In alphabetical order, the answers are: 5,1,6,3,11,2,10,7,12,9,4,8"
@@ -146,7 +190,24 @@ puzzles:
           - https://files.ircpuzzles.org/2023/lRYkgSnNu1n2IS9VN8aM.mp3
       - 
           - F
-          - https://files.ircpuzzles.org/2023/hintF-ZNgHJYHcPNC97Tr2zqnt.txt
+          - |
+                You and me, in a diminutive plaything market
+                Acquire a purse of gasbags with the dough we possess
+                Lay them unbound at the emergence of cockcrow
+                Before singularly, they were truant.
+                Back at headquarters, vestiges in program
+                Fluoresce the memo "An object's elsewhere."
+                Levitating in the hot ether
+                A hundred less one scarlet blimps flow on.
+
+                A hundred less one scarlet blimps
+                Levitating in the hot ether
+                Klaxons, it's cherry signal.
+                There is an object here from elsewhere.
+                The tussle gadget vaults to its mortal coil
+                Unfurls one hopeful organ of sight
+                Engaging it on the ether
+                The hundred less one scarlet blimps flow on.
       - anthems
     answer: groupofseven
     walkthrough: https://blog.ircpuzzles.org/2023/05/2023-afpc-summary/
@@ -225,7 +286,7 @@ puzzles:
       - usa
       - K-N; B-M-A; F-P; N-U-M-T
       -
-          - this is not a clue, for testing only
+          - for testing only
           - https://files.ircpuzzles.org/2023/IX0bK31fPNk5Sbh39Ugi/test.wav
     hints:
       - 
