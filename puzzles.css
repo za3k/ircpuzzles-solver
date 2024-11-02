@@ -2,6 +2,69 @@
     box-sizing: border-box;
 }
 
+.htabs {
+    border-bottom: 2px solid black;
+}
+.htabs > .tab {
+    border: 2px solid black;
+    padding: 0.3em 1em 0.4em;
+    border-radius: 12px 12px 0 0;
+    background: lightgrey;
+    margin-bottom: -2px;
+    font-weight: bold;
+    z-index: -1;
+    display: inline-block;
+    margin-right: 5px;
+}
+.htabs > .tab:hover {
+    border-color: maroon;
+    border-bottom-color: lightgrey;
+    text-shadow: 1px 0px 0px black;
+}
+.htabs > .tab:active {
+    border-color: red;
+    border-bottom-color: white;
+    background: white;
+}
+.htabs > .tab.selected {
+    background: white;
+    border-bottom-color: white;
+}
+
+.vtabs {
+    width: 15em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.vtabs > .tab {
+    font-size: 14pt;
+    padding: 0.1em 0;
+    text-align: center;
+    height: 2em;
+    line-height: 200%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+.vtabs > .tab:hover {
+    background-color: #ddd;
+}
+.vtabs > .tab:active {
+    background-color: #ccc;
+}
+.vtabs > .tab.selected {
+    background-color: #ccc;
+}
+.tab {
+    user-select: none;
+    cursor: pointer;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -10,7 +73,6 @@ html, body {
 }
 
 body {
-    padding-left: 2em;
     display: flex;
     flex-direction: column;
 }
@@ -51,7 +113,93 @@ body {
 }
 
 .solver {
+    border: 2px solid;
+    margin: 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.wrong-answer {
+    position: absolute;
+    font-size: 100pt;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titlebar {
+    display: flex;
+    background: lightblue;
+    flex: 0;
+}
+.titlebar > * {
+    margin: 0.5em;
+}
+.puzzle-tabs {
+    flex: 0;
+    padding: 1em 1em 0 1em;
+    background: lightblue;
+}
+.puzzles {
+    flex: 1;
+}
+
+.puzzle {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    border: 2px solid;
 }
+
+.clue-section {
+    flex: 1;
+    display: flex;
+}
+.clues {
+    margin-top: 1em;
+}
+.clue {
+    white-space: pre-wrap;
+}
+
+.action-section {
+    flex: 0;
+    display: flex;
+}
+.action-section > * {
+    display: inline-block;
+    margin: 0.5em 1em;
+}
+.action {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #eee;
+    width: 8em;
+    text-align: center;
+    user-select: none;
+}
+.action:hover {
+    color: blue;
+    background-color: #fff;
+}
+.action:active {
+    border-style: dashed;
+    background-color: #ffffdd
+}
+
+.puzzle .action.close, .puzzle .walkthrough {
+    display: none;
+}
+
+.puzzle.solved .action.close, .puzzle.solved .walkthrough {
+    display: inherit;
+}
+
+.puzzle.solved .action.show-hint, .puzzle.solved .action.answer, .puzzle.solved .action.skip {
+    display: none;
+}
+
