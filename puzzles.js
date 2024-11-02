@@ -38,8 +38,11 @@ async function loadYear(year) {
     $(".hunt-year").text(year)
     $(".hunt-theme").text(data.theme)
     unlockPuzzle(data.start)
-    for (var puzzle of Object.keys(data.puzzles)) unlockPuzzle(puzzle)
     focusPuzzle(data.start)
+}
+
+function unlockAll() {
+    for (var puzzle of Object.keys(data.puzzles)) unlockPuzzle(puzzle)
 }
 
 function skipPuzzle(puzzle) { finishPuzzle(puzzle); }
@@ -246,5 +249,6 @@ $(document).ready(function() {
         $(".year-select").hide();
         $(".footnote").hide();
         $(".solver").show();
+        $(".reveal-all").on("click", unlockAll).css("width", "16em")
     })
 })
